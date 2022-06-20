@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <title></title>
+</head>
+
+<body>
+    <div id="root">
+        <div class="child">我是子元素</div>
+        <button>移除</button>
+    </div>
+    <script>
+    
+        let btn = document.querySelector('button')
+        let child = document.querySelector('.child')
+        let root = document.querySelector('#root')
+        
+        btn.addEventListener('click', function() {
+            root.removeChild(child)
+        })
+    
+    </script>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>
